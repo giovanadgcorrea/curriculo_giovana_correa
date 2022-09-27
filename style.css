@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(90deg, rgb(0, 0, 46), rgb(23, 44, 107));
+    font-family: 'Inter', sans-serif;
+    line-height: 1.3;
+    position: relative;
+}
+
+header {
+    height: 52px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(90deg, rgb(0, 0, 46), rgb(23, 44, 107));
+    color: rgb(255, 229, 229);
+    z-index: 1;
+}
+
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav li {
+    display: inline-block;
+    margin: 16px 10px;
+}
+
+nav li:not(:last-child):after {
+    content: "•";
+    margin-left: 24px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(229, 229, 255);
+    transition: 0.3s color;
+}
+
+nav li a:hover{
+    color: rgba(229, 231, 255, 0.5);
+}
+
+
+main {
+    background: rgb(229, 231, 255);
+    padding: 48px 0;
+    color: rgb(5, 4, 82);
+}
+
+main div {
+    width: 1020px;
+    margin: 0 auto;    
+}
+
+.sobre-mim {
+    position: relative;
+}
+
+.foto-sobre-mim {
+    width: 450px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 1px 1px 16px rgba(8, 4, 82, 0.2);
+}
+
+.texto-sobre-mim {
+    display: inline-block;
+    width: 500px;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 48px;
+}
+
+.background-texto {
+    background-color: rgb(4, 4, 82);
+    box-shadow: 1px 1px 16px rgba(4, 7, 82, 0.5);
+    color: rgb(229, 229, 255);
+    padding: 18px;
+    display: inline-block;
+    border-radius: 8px;
+    width: 45%;
+    box-sizing: border-box;
+    vertical-align: top;
+    height: 120px;
+}
+
+.background-texto a {
+    color: rgb(230, 229, 255);
+}
+
+.margem-caixas {
+    margin: 20px;
+}
+
+.icones-interesses {
+    width: 60px;
+    margin: 5px;
+}
+
+
+section {
+    width: 1020px;
+    height: 480px;
+    margin: 0 auto;
+    padding-top: 48px;
+    position: relative;
+    color: rgb(231, 229, 255);
+}
+
+.pessoa {
+    display: inline-block;
+}
+
+.pessoa h1 {
+    font-size: 62px;
+    margin-top: 64px;
+}
+
+.avatar {
+    position: absolute;
+    width: 300px;
+    aspect-ratio: 1;
+    background-image: url('img/gi.png');
+    background-position: center;
+    background-size: cover;
+    right: 80px;
+    top: 90px;
+    border-radius: 50%;
+    border: rgb(8, 8, 78) 10px solid;
+}
+
+.pessoa h3 {
+    margin: 16px 0;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.icones-informacoes {
+    width: 22px;
+}
+
+.contato {
+    position: relative;
+    margin-top: 4px;
+}
+
+.contato p {
+    position: absolute;
+    top: 3px;
+    left: 48px;
+}
+
+.midias {  
+    position: absolute;
+    right: 0;
+    top: 200px;
+}
+
+.midias img {
+    width: 28px;
+    display: block;
+    margin-bottom: 8px;
+    transition: 0.7s transform;
+}
+
+.midias img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    height: 180px;
+    padding-top: 32px;
+    text-align: center;
+}
+
+footer, a {
+    color: rgb(231, 229, 255);
+}
+
+.footer-informacoes {
+    width: 1020px;
+    margin: 0 auto 52px;
+}
+
+.fale-comigo {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+}
+
+.menu-mobile {
+    width: 250px;
+    height: 400px;
+    background-image: linear-gradient(90deg, rgb(0, 0, 46), rgb(23, 44, 107));
+    position: fixed;
+    top: 8px;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
+}
+
+.display-menu {
+    display: none;
+}
+
+.icone-menu {
+    display: none;
+    position: absolute;    
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    transition: 0.3s opacity;
+}
+
+.icone-exit {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    transition: 0.3s opacity;
+}
+
+.icone-menu:hover, .icone-exit:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.nav-mobile {
+    position: relative;
+}
+
+.nav-mobile ul {
+    position: absolute;
+    top: 100px;
+    left: 48px;
+}
+
+.nav-mobile li {
+    margin-bottom: 16px;
+}
+
+.nav-mobile li::before {
+    content: "•";
+    color: rgb(255, 229, 229);
+}
+
+.nav-mobile a {
+    text-decoration: none; 
+    transition: 0.3s color;
+    margin-left: 8px;
+}
+
+.nav-mobile a:hover {
+    color: rgba(255, 229, 229, 0.5);
+}
+
+
+@media screen and (max-width:1040px) {
+
+    header {
+        display: none;
+    }
+
+    main {
+        padding: 30px 0;
+    }
+
+    main div {
+        width: 500px;
+        padding: 8px;
+    }
+
+    .foto-sobre-mim {
+        width: 100%;
+        opacity: 0.2;
+        position: relative;
+    }
+
+    .texto-sobre-mim {
+        display: block;
+        width: 500px;
+        text-align: center;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        margin-bottom: 8px;
+        margin-top: 8px;
+    }
+
+    .background-texto {
+        font-size: 13px;
+        width: 100%;
+        height: 110px;
+    }
+
+    .margem-caixas {
+        margin: 0 0 30px 0;
+    }
+
+    .icones-interesses {
+        width: 60px;
+    }
+
+    section {
+        width: 360px;
+        height: 440px;
+    }
+
+    .avatar {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 120px;
+        top: 16px;
+        border-width: 8px; 
+    }
+
+    .pessoa {
+        display: block;
+    }
+
+    .pessoa h1 {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 120px;
+    }
+
+    .pessoa h3 {
+        text-align: center;
+        font-size: 14px;
+        margin: 4px 0 24px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .icones-informacoes {
+        width: 32px;
+    }
+    
+    .contato {
+        position: relative;
+        margin-left: 32px;
+    }
+    
+    .contato p {
+        top: 7px;
+        left: 40px;
+    }
+
+    .midias {  
+        position: absolute;
+        top: 400px;
+        right: 0;
+        left: 0px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .midias img {
+        width: 40px;
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 16px 0 24px 0;
+    }
+    .footer-informacoes  {
+        width: 200px;
+    }
+
+    .icone-menu {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width:1041px) {
+    .menu-mobile {
+        display: none;
+    }
+}
