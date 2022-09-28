@@ -126,7 +126,8 @@ section {
 }
 
 .pessoa h1 {
-    font-size: 62px;
+    font-size: 64px;
+    font-weight: lighter;
     margin-top: 64px;
 }
 
@@ -143,14 +144,20 @@ section {
     border: rgb(8, 8, 78) 10px solid;
 }
 
-.pessoa h3 {
+.pessoa h2 {
     margin: 16px 0;
     font-style: italic;
     font-weight: lighter;
 }
 
-.icones-informacoes {
-    width: 22px;
+.contato img {
+    width: 30px;
+    margin: 5px;
+    transition: 0.7s transform;
+}
+
+.contato img:hover {
+    transform: scale(1.3);
 }
 
 .contato {
@@ -158,28 +165,6 @@ section {
     margin-top: 4px;
 }
 
-.contato p {
-    position: absolute;
-    top: 3px;
-    left: 48px;
-}
-
-.midias {  
-    position: absolute;
-    right: 0;
-    top: 200px;
-}
-
-.midias img {
-    width: 28px;
-    display: block;
-    margin-bottom: 8px;
-    transition: 0.7s transform;
-}
-
-.midias img:hover {
-    transform: scale(1.2);
-}
 
 footer {
     height: 180px;
@@ -193,7 +178,11 @@ footer, a {
 
 .footer-informacoes {
     width: 1020px;
-    margin: 0 auto 52px;
+    margin: 0 auto 35px;
+}
+
+.footer-informacoes img {
+    width: 30px;
 }
 
 .fale-comigo {
@@ -269,7 +258,7 @@ footer, a {
 }
 
 
-@media screen and (max-width:1040px) {
+@media screen and (max-width:980px) {
 
     header {
         display: none;
@@ -343,7 +332,7 @@ footer, a {
         margin-top: 120px;
     }
 
-    .pessoa h3 {
+    .pessoa h2 {
         text-align: center;
         font-size: 14px;
         margin: 4px 0 24px;
@@ -351,39 +340,26 @@ footer, a {
         font-style: italic;
     }
 
-    .icones-informacoes {
-        width: 32px;
-    }
-    
-    .contato {
-        position: relative;
-        margin-left: 32px;
-    }
-    
-    .contato p {
-        top: 7px;
-        left: 40px;
-    }
-
-    .midias {  
+    .contato {  
         position: absolute;
-        top: 400px;
+        top: 300px;
         right: 0;
         left: 0px;
         width: 200px;
         margin: 0 auto;
         text-align: center;
+
     }
     
-    .midias img {
-        width: 40px;
+    .contato img {
+        width: 30px;
         display: inline-block;
-        margin-bottom: 8px;
     }
 
     footer {
         padding: 16px 0 24px 0;
     }
+
     .footer-informacoes  {
         width: 200px;
     }
