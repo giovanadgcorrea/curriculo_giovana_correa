@@ -1,14 +1,14 @@
-const MENU = document.querySelector('#menu-mobile')
-const ICONE_MENU = document.querySelector('.icone-menu')
-const EXIT = document.querySelector('#menu-exit')
+const menu = document.querySelector('#menu-mobile')
+const icone_menu = document.querySelector('.icone-menu')
+const exit = document.querySelector('#menu-exit')
 
 function abrirMenuMobile() {
-    MENU.classList.remove('display-menu')
+    menu.classList.remove('display-menu')
 }
 
 function fecharMenuMobile() {
-    MENU.classList.add('display-menu')
+    menu.classList.add('display-menu')
 }
 
-ICONE_MENU.onclick = abrirMenuMobile
-EXIT.onclick = fecharMenuMobile
+icone_menu.onclick = abrirMenuMobile
+exit.onclick = fecharMenuMobile
