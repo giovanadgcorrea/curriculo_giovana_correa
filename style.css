@@ -242,6 +242,7 @@ footer, a {
 
 .nav-mobile ul {
     position: absolute;
+    font-size: 24px;
     top: 100px;
     left: 48px;
     list-style: none;
@@ -278,8 +279,8 @@ footer, a {
     }
 
     main div {
-        width: 700px;
-        padding: 12px;
+        width: 600px;
+        padding: 15px;
     }
 
     .foto-sobre-mim {
@@ -291,7 +292,7 @@ footer, a {
         display: block;
         width: 500px;
         text-align: center;
-        font-size: 20px;
+        font-size: 24px;
         right: 0;
         left: 0;
         top: 0;
@@ -304,9 +305,9 @@ footer, a {
     }
 
     .background-texto {
-        font-size: 20px;
-        width: 600px;
-        height: 150px;
+        font-size: 23px;
+        width: 630px;
+        height: 175px;
     }
 
     .margem-caixas {
@@ -314,12 +315,12 @@ footer, a {
     }
 
     .icones-interesses {
-        width: 80px;
+        width: 81px;
     }
 
     section {
         width: 460px;
-        height: 450px;
+        height: 460px;
     }
 
     .avatar {
@@ -354,16 +355,16 @@ footer, a {
 
     .contato {  
         position: absolute;
-        top: 320px;
+        top: 350px;
         right: 0;
         left: 0;
-        width: 200px;
+        width: 250px;
         margin: 0 auto;
         text-align: center;
     }
     
     .contato img {
-        width: 34px;
+        width: 40px;
         display: inline-block;
     }
 
